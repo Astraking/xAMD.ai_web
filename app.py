@@ -162,7 +162,7 @@ class RetinalImagePipeline:
         image_tensor = self.preprocess(image)
         if self.is_retinal_image(image_tensor):
             amd_result, confidence = self.detect_amd(image_tensor)
-            gradcam = self.generate_gradcam(self.amd_model, image_tensor, self.amd_model.efficientnet._conv_head)
+            gradcam = self.generate_gradcam(self.amd_model, image_tensor, self.amd_model.features[8])
             self.visualize_gradcam(image, gradcam)
             result_text = "AMD Detected" if amd_result == 0 else "No AMD Detected"
             return f"{result_text} with probability {confidence:.4f}"
