@@ -237,7 +237,7 @@ elif choice == "About AMD":
 
     For more information, visit [NEI AMD Information](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration).
     """)
-    st.image("https://www.nei.nih.gov/sites/default/files/styles/featured_image/public/2019-06/macula_cross_section_v3_500px.jpg", width=300, caption="Cross-section of the macula")
+    st.image("https://images.app.goo.gl/8oGiXJms5d7vvT9M8", width=300, caption="Cross-section of the macula")
 
 # Add a footer
 st.sidebar.markdown("---")
