@@ -185,7 +185,7 @@ if choice == "Home":
     This application allows you to upload retinal images to screen for Age-related Macular Degeneration (AMD).
     Please use the sidebar to navigate through the app.
     """)
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Macula.svg/1200px-Macula.svg.png", width=300, caption="Illustration of the macula")
+    # st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Macula.svg/1200px-Macula.svg.png", width=300, caption="Illustration of the macula")
 
 elif choice == "Upload Image":
     st.header("Upload Retinal Image")
@@ -237,7 +237,7 @@ elif choice == "About AMD":
 
     For more information, visit [NEI AMD Information](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration).
     """)
-    # st.image("https://medlineplus.gov/ency/images/ency/fullsize/9608.jpg", caption="Cross-section of the macula")
+    st.image("https://medlineplus.gov/ency/images/ency/fullsize/9608.jpg", caption="Cross-section of the macula")
 
 # Add a footer
 st.sidebar.markdown("---")
